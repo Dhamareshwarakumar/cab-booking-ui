@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Admin</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/util.css">
+
+</head>
+
+<body>
+    <main>
+        <nav>
+            <div class="logo">
+                <img src="./assets/images/logo.png" alt=""> <span>Travel App</span>
+                <p style="display: inline-block; margin-left: 1rem;">Hello Admin</p>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li id="cars-btn"><a href="#">Cars</a></li>
+                    <li id="drivers-btn"><a href="#">Drivers</a></li>
+                    <li id="requests-btn"><a href="#">Car Requests</a></li>
+                </ul>
+                <a href="./login/">
+                    <div class="btn btn-primary">Logout</div>
+                </a>
+            </div>
+        </nav>
+        <section id="cars">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Cars List</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Car Id</th>
+                                <th scope="col">Model</th>
+                                <th scope="col">Color</th>
+                                <th scope="col">Seating Capacity</th>
+                                <th scope="col">Available for Booking?</th>
+                                <th scope="col">Driver Id</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">552</th>
+                                <td>BMW</td>
+                                <td>Blue</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>203</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">553</th>
+                                <td>Swift</td>
+                                <td>Red</td>
+                                <td>4</td>
+                                <td>Yes</td>
+                                <td>202</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">554</th>
+                                <td>Car 1</td>
+                                <td>White</td>
+                                <td>7</td>
+                                <td>Yes</td>
+                                <td>205</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="./add-car.html">
+                            <div class="btn btn-success">Add Car</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="drivers">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Drivers List</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Driver Id</th>
+                                <th scope="col">Username</th>
+                                <th scope="col">Assigned Car Id</th>
+                                <th scope="col">Delete</th>
+                                <th scope="col">Used Cars</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">202</th>
+                                <td>Driver 1</td>
+                                <td>552</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Used Cars</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">203</th>
+                                <td>Driver 2</td>
+                                <td>553</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Used Cars</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">206</th>
+                                <td>Driver 5</td>
+                                <td>555</td>
+                                <td>
+                                    <div class="btn btn-primary">Delete</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Used Cars</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <a href="./add-driver.html">
+                            <div class="btn btn-success">Add Driver</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="requests">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Car Requests</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Request Id</th>
+                                <th scope="col">Driver Id</th>
+                                <th scope="col">Car Id</th>
+                                <th scope="col">Request Status</th>
+                                <th scope="col">Approve</th>
+                                <th scope="col">Reject</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>202</td>
+                                <td>552</td>
+                                <td>Accepted</td>
+                                <td>
+                                    <div class="btn btn-primary">Approve</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Reject</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>203</td>
+                                <td>553</td>
+                                <td>Accepted</td>
+                                <td>
+                                    <div class="btn btn-primary">Approve</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Reject</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>206</td>
+                                <td>555</td>
+                                <td>Accepted</td>
+                                <td>
+                                    <div class="btn btn-primary">Approve</div>
+                                </td>
+                                <td>
+                                    <div class="btn btn-primary">Reject</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const cars = document.getElementById('cars');
+        const drivers = document.getElementById('drivers');
+        const requests = document.getElementById('requests');
+
+        const carsBtn = document.getElementById('cars-btn');
+        const driversBtn = document.getElementById('drivers-btn');
+        const requestsBtn = document.getElementById('requests-btn');
+
+        carsBtn.addEventListener('click', () => {
+            cars.style.display = 'block';
+            drivers.style.display = 'none';
+            requests.style.display = 'none';
+        });
+
+        driversBtn.addEventListener('click', () => {
+            cars.style.display = 'none';
+            drivers.style.display = 'block';
+            requests.style.display = 'none';
+        });
+
+        requestsBtn.addEventListener('click', () => {
+            cars.style.display = 'none';
+            drivers.style.display = 'none';
+            requests.style.display = 'block';
+        });
+
+        cars.style.display = 'block';
+        drivers.style.display = 'none';
+        requests.style.display = 'none';
+
+
+    </script>
+</body>
+
+</html>
